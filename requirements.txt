@@ -1,0 +1,16 @@
+# Core dependencies for transcribe_japanese_mp4.py
+
+# HuggingFace Transformers – provides the ASR pipeline and Whisper model support
+transformers>=4.36.0
+
+# PyTorch – required backend for the transformers pipeline
+# Install the CPU-only build to keep download size manageable;
+# replace with the appropriate CUDA wheel if a GPU is available.
+torch>=2.0.0
+
+# Accelerate – optional but recommended for faster inference on GPU
+accelerate>=0.26.0
+
+# SoundFile / librosa – used by transformers to load audio
+soundfile>=0.12.0
+librosa>=0.10.0
